@@ -1,3 +1,3 @@
-import kebab from "./kebab";
+import { Button } from "./Button/Button";
 
-export { kebab };
+export { Button };
