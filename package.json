@@ -25,7 +25,8 @@
   "devDependencies": {
     "@types/react": "^16.9.46",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "typescript": "^3.9.7"
   },
   "peerDependencies": {
     "react": ">=116.13.1",

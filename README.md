@@ -22,3 +22,27 @@ Let consumers know they need to have these dependencies – in
 }
 ````
 
+Install and configure TypeScript.
+```bash
+npm i -D typescript
+```json
+In `tsconfig.json`:
+```json{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "declarationDir": "build",
+    "esModuleInterop": true,
+    "jsx": "react",
+    "lib": ["es6", "dom", "es2016", "es2017"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "target": "es5"
+  },
+  "include": ["src/**/*"],
+  "exclude": [
+    "src/**/*.test.tsx"
+  ]
+}
+```
