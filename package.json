@@ -2,8 +2,12 @@
   "name": "react-ui",
   "version": "1.0.0-beta",
   "description": "WIP React/TS UI component lib",
-  "module": "dist/react-ui.esm.js",
   "main": "dist/react-ui.cjs.js",
+  "module": "dist/react-ui.esm.js",
+  "files": [
+    "build"
+  ],
+  "types": "build/index.d.ts",
   "scripts": {
     "build": "rimraf dist/* && rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
