@@ -1,0 +1,1 @@
+{"version":3,"file":"react-ui.esm.js","sources":["../src/kebab.ts"],"sourcesContent":["const kebab: (s: string) => string = (s) => `-${s}-`;\nexport default kebab;\n"],"names":[],"mappings":"IAAM,KAAK,GAA0B,UAAC,CAAC,IAAK,OAAA,MAAI,CAAC,MAAG;;;;"}

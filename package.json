@@ -2,8 +2,10 @@
   "name": "react-ui",
   "version": "1.0.0-beta",
   "description": "WIP React/TS UI component lib",
-  "main": "index.js",
+  "module": "dist/react-ui.esm.js",
+  "main": "dist/react-ui.cjs.js",
   "scripts": {
+    "build": "rimraf dist/* && rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,9 +25,17 @@
   },
   "homepage": "https://github.com/benglynn/react-ui#readme",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
     "@types/react": "^16.9.46",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.25.0",
+    "rollup-plugin-peer-deps-external": "^2.2.3",
+    "rollup-plugin-postcss": "^3.1.5",
+    "rollup-plugin-typescript2": "^0.27.2",
     "typescript": "^3.9.7"
   },
   "peerDependencies": {
