@@ -9,7 +9,8 @@
   ],
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "rimraf dist/* && rollup -c",
+    "clear": "rimraf dist/* ",
+    "build": "rollup -cw",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
