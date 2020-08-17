@@ -11,12 +11,13 @@ const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
 export const Enabled = Template.bind({});
 Enabled.args = {
-  label: 'Enabled',
+  label: 'Button',
+  disabled: false
 };
 
 export const Disabled = Template.bind({});
 Disabled.args = {
-  label: 'Disabled',
+  label: 'Button',
   disabled: true
 };
 

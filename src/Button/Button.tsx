@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 export interface ButtonProps {
-    disabled: boolean;
+    disabled?: boolean;
     label: string;
     onClick: (fn: (e: Event) => {}) => void;
 }
