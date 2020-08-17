@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-interface Props {
+export interface ButtonProps {
     disabled: boolean;
     label: string;
     onClick: (fn: (e: Event) => {}) => void;
@@ -11,7 +11,7 @@ const StyledButton = styled.button`
     align-items: center;
     background: #5d5aa7;
     border-radius: .2em;
-    border: 1px solid #333;
+    border: none;
     color: white;
     display: inline-flex;
     font-size: 1em;
@@ -26,10 +26,12 @@ const StyledButton = styled.button`
     }
 `;
 
-export const Button: React.FC<Props> = ({ disabled, label, onClick }) => (
+export const Button: React.FC<ButtonProps> = ({
+    label = 'Button',
+    ...props
+}) => (
     <StyledButton
         className=".Button"
-        disabled={disabled}
-        onClick={onClick}
+        {...props}
         >{label}</StyledButton>
 );
