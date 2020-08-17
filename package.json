@@ -1,5 +1,5 @@
 {
-  "name": "react-ui",
+  "name": "@benglynn/react-ui",
   "version": "1.0.0-beta",
   "description": "WIP React/TS UI component lib",
   "main": "dist/react-ui.cjs.js",
@@ -7,7 +7,7 @@
   "files": [
     "build"
   ],
-  "types": "build/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "rimraf dist/* && rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -33,8 +33,8 @@
     "@rollup/plugin-node-resolve": "^9.0.0",
     "@types/react": "^16.9.46",
     "node-sass": "^4.14.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
     "rimraf": "^3.0.2",
     "rollup": "^2.25.0",
     "rollup-plugin-peer-deps-external": "^2.2.3",
@@ -43,7 +43,7 @@
     "typescript": "^3.9.7"
   },
   "peerDependencies": {
-    "react": ">=116.13.1",
-    "react-dom": ">=16.13.1"
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
   }
 }
