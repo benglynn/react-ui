@@ -10,9 +10,9 @@ export default {
 
 const Template: Story<ModalProps> = (args) => <Modal {...args} />;
 
-export const Enabled = Template.bind({});
-Enabled.args = {
-  label: 'Enabled',
+export const Default = Template.bind({});
+Default.args = {
+  label: 'Modal',
   children: "This is the content of the modal"
 };
 
