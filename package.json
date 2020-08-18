@@ -11,6 +11,8 @@
   "scripts": {
     "clear": "rimraf dist/* ",
     "build": "rollup -cw",
+    "link-demo": "npm link ../react-ui-demo/node_modules/react",
+    "unlink-demo": "rm -fr node_modules/react && npm install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
